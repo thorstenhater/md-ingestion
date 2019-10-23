@@ -54,6 +54,8 @@ else:
     from urllib.request import urlopen, Request
     from urllib.error import HTTPError,URLError
 
+warnings.simplefilter(action='module', category=InsecureRequestWarning)
+
 class Harvester(object):
     
     """
